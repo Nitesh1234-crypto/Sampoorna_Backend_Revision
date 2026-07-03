@@ -1,15 +1,12 @@
 // //commonjs ==> require
-// //esmodule ==> import and export
+// //esmodule ==> import and export keyword
 // module.exports.add=function(a,b){
 //     return a+b;
 // }
 // module.exports.sub= function(a,b){
 //     return a-b;
 // }
-// //object={
-//  // add:add,
-//  // sub:sub
-// //}
+
 // // module.exports.add=add;
 // // module.exports.sub=sub;
 // // module.exports={
@@ -23,11 +20,12 @@
 // // obj.b=20;
 // // console.log(obj);
 
-
+//named export
 export function add(a,b){
     return a+b;
 }
  function sub(a,b){
     return a-b;
 }
+//default export
 export default sub;

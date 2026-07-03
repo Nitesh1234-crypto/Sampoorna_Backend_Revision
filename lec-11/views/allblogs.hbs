@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is all blogs page</h1>
+    {{#each blogs as |blog|}}
+    <ul>
+        <li>
+            <img src={{blog.blogImage}} alt="">
+            <h1>Title {{blog.title}}</h1>
+            <p>desc {{blog.desc}}</p>
+            <h4>author {{blog.author}}</h4>
+        </li>
+    </ul>
+
+    {{/each}}
+</body>
+</html>

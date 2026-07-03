@@ -29,3 +29,11 @@ module.exports.deletePost=async(req,res)=>{
         data:deletedPost
     })
 }
+
+module.exports.getAllPosts=async(req,res)=>{
+    let allPost = await Post.find().populate("userId");
+    res.json({
+        success:true,
+        data:allPost
+    })
+}

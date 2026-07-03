@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{> header}}
+    <h1>Blog page</h1>
+    {{!-- <div>
+        <h1>Title is {{title}} </h1>
+    </div> --}}
+    <img src={{blog.blogImage}} alt="">
+    <ul>
+        <li>Title {{blog.title}}</li>
+        <li>desc {{blog.desc}}</li>
+        <li>Author {{blog.author}} </li>
+    </ul>
+</body>
+</html>

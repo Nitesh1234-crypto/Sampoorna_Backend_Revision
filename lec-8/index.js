@@ -76,9 +76,9 @@ app.listen(7688,()=>{
 console.log('server started')
 })
 
-function isLogin(req,res,next){
+async function isLogin(req,res,next){
     let userid = req.session.userid;
-    let user = User.findById(userid);
+    let user = await User.findById(userid);
     if(!user){
         return res.json({
             success:false,
